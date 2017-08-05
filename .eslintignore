@@ -2,3 +2,5 @@ coverage/
 demo/
 dist/
 node_modules
+
+index.js
