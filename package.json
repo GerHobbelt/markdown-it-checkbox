@@ -1,8 +1,8 @@
 {
-  "name": "markdown-it-checkbox",
-  "version": "1.1.2-1",
+  "name": "@gerhobbelt/markdown-it-checkbox",
+  "version": "1.1.2-2",
   "description": "Plugin to create checkboxes for markdown-it markdown parser",
-  "repository": "mcecot/markdown-it-checkbox",
+  "repository": "GerHobbelt/markdown-it-checkbox",
   "keywords": [
     "markdown-it-plugin",
     "markdown-it",
@@ -12,28 +12,28 @@
   "main": "index.js",
   "scripts": {
     "test": "make test",
-    "build": "make"
+    "build": "make",
+    "pub": "npm publish --access public"
   },
   "devDependencies": {
-    "browserify": "14.4.0",
+    "browserify": "14.5.0",
     "coffee-script": "1.12.7",
-    "coffeelint": "1.16.0",
-    "coveralls": "2.13.1",
+    "coffeelint": "2.0.7",
     "del": "3.0.0",
-    "eslint": "4.4.0",
+    "eslint": "4.10.0",
     "gulp": "3.9.1",
-    "gulp-bump": "2.7.0",
+    "gulp-bump": "2.8.0",
     "gulp-coffee": "2.3.4",
     "gulp-filter": "5.0.1",
-    "gulp-git": "2.4.1",
+    "gulp-git": "2.4.2",
     "gulp-tag-version": "1.3.0",
     "gulp-util": "3.0.8",
     "istanbul": "0.4.5",
-    "markdown-it": "GerHobbelt/markdown-it#master",
-    "markdown-it-testgen": "GerHobbelt/markdown-it-testgen#master",
-    "mocha": "3.5.0",
-    "should": "11.2.1",
-    "uglify-js": "3.0.27"
+    "@gerhobbelt/markdown-it": "8.4.0-16",
+    "@gerhobbelt/markdown-it-testgen": "0.1.5-5",
+    "mocha": "4.0.1",
+    "should": "13.1.3",
+    "uglify-js": "3.1.6"
   },
   "dependencies": {
     "underscore": "1.8.3"

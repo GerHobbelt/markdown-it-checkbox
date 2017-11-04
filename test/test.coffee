@@ -1,6 +1,6 @@
 'use strict'
 path = require('path')
-generate = require('markdown-it-testgen')
+generate = require('@gerhobbelt/markdown-it-testgen')
 should = require 'should'
 
 ###eslint-env mocha ###
@@ -8,7 +8,7 @@ describe 'markdown-it-checkbox', ->
 
   describe 'markdown-it-checkbox()', ->
     plugin = require '../'
-    md = require('markdown-it')()
+    md = require('@gerhobbelt/markdown-it')()
     md.use plugin, {divWrap: false}
     generate path.join(__dirname, 'fixtures/checkbox.txt'), md
 
@@ -21,7 +21,7 @@ describe 'markdown-it-checkbox', ->
     plugin = require('../')
 
     it 'should should optionally wrap arround a div layer', (done) ->
-      md = require('markdown-it')()
+      md = require('@gerhobbelt/markdown-it')()
       md.use plugin, {divWrap: true}
       res = md.render('[X] test written')
       res.toString().should.be.eql '<p>' +
@@ -33,7 +33,7 @@ describe 'markdown-it-checkbox', ->
       done()
 
     it 'should should optionally change class of div layer', (done) ->
-      md = require('markdown-it')()
+      md = require('@gerhobbelt/markdown-it')()
       md.use plugin, {divWrap: true, divClass: 'cb'}
       res = md.render('[X] test written')
       res.toString().should.be.eql '<p>' +
@@ -45,7 +45,7 @@ describe 'markdown-it-checkbox', ->
       done()
 
     it 'should should optionally change the id', (done) ->
-      md = require('markdown-it')()
+      md = require('@gerhobbelt/markdown-it')()
       md.use plugin, {idPrefix: 'cb'}
       res = md.render('[X] test written')
       res.toString().should.be.eql '<p>' +

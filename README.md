@@ -14,15 +14,15 @@ This plugin allows to create checkboxes for tasklists as discussed [here](http:/
 node.js, browser:
 
 ```bash
-npm install markdown-it-checkbox --save
-bower install markdown-it-checkbox --save
+npm install @gerhobbelt/markdown-it-checkbox --save
+bower install @gerhobbelt/markdown-it-checkbox --save
 ```
 
 ## Use
 
 ```js
-var md = require('markdown-it')()
-            .use(require('markdown-it-checkbox'));
+var md = require('@gerhobbelt/markdown-it')()
+            .use(require('@gerhobbelt/markdown-it-checkbox'));
 
 md.render('[ ] unchecked') // =>
 // <p>
@@ -43,8 +43,8 @@ package system, module will add itself globally as `window.markdownitCheckbox`.
 ## Options
 
 ```js
-var md = require('markdown-it')()
-            .use(require('markdown-it-checkbox'),{
+var md = require('@gerhobbelt/markdown-it')()
+            .use(require('@gerhobbelt/markdown-it-checkbox'),{
               divWrap: true,
               divClass: 'cb',
               idPrefix: 'cbx_'
@@ -83,19 +83,19 @@ the id of the checkboxs input contains the prefix and an incremental number star
 
 ## License
 
-[MIT License](https://github.com/mcecot/markdown-it-checkbox/blob/master/LICENSE) © 2015 Markus Cecot
+[MIT License](https://github.com/GerHobbelt/markdown-it-checkbox/blob/master/LICENSE) © 2015 Markus Cecot
 
-[npm-url]: https://npmjs.org/package/markdown-it-checkbox
-[npm-image]: https://img.shields.io/npm/v/markdown-it-checkbox.svg
+[npm-url]: https://npmjs.org/package/@gerhobbelt/markdown-it-checkbox
+[npm-image]: https://img.shields.io/npm/v/@gerhobbelt/markdown-it-checkbox.svg
 
-[travis-url]: http://travis-ci.org/mcecot/markdown-it-checkbox
-[travis-image]: https://secure.travis-ci.org/mcecot/markdown-it-checkbox.svg?branch=master
+[travis-url]: http://travis-ci.org/GerHobbelt/markdown-it-checkbox
+[travis-image]: https://secure.travis-ci.org/GerHobbelt/markdown-it-checkbox.svg?branch=master
 
-[coveralls-url]: https://coveralls.io/r/mcecot/markdown-it-checkbox
-[coveralls-image]: https://img.shields.io/coveralls/mcecot/markdown-it-checkbox.svg
+[coveralls-url]: https://coveralls.io/r/GerHobbelt/markdown-it-checkbox
+[coveralls-image]: https://img.shields.io/coveralls/GerHobbelt/markdown-it-checkbox.svg
 
-[depstat-url]: https://david-dm.org/mcecot/markdown-it-checkbox
-[depstat-image]: https://david-dm.org/mcecot/markdown-it-checkbox.svg
+[depstat-url]: https://david-dm.org/GerHobbelt/markdown-it-checkbox
+[depstat-image]: https://david-dm.org/GerHobbelt/markdown-it-checkbox.svg
 
-[devdepstat-url]: https://david-dm.org/mcecot/markdown-it-checkbox#info=devDependencies
-[devdepstat-image]: https://david-dm.org/mcecot/markdown-it-checkbox/dev-status.svg
+[devdepstat-url]: https://david-dm.org/GerHobbelt/markdown-it-checkbox#info=devDependencies
+[devdepstat-image]: https://david-dm.org/GerHobbelt/markdown-it-checkbox/dev-status.svg
